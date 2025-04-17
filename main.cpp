@@ -107,6 +107,7 @@ int main() {
     while (getline(file, line)) {
         cout << line << endl;
     } */
+    /* problem 13
     struct Date {
         int day;
         int month;
@@ -115,6 +116,31 @@ int main() {
     Date today;
     cout << "Enter date in DDMMYY format: ";
     cin >> today.day >> today.month >> today.year;
-    cout << today.day << "-" << today.month << "-" << today.year << endl;
+    cout << today.day << "-" << today.month << "-" << today.year << endl; */
+    /* problem 14
+    struct StudentInfo {
+        int id;
+        int age;
+        string gender;
+        float cga;
+    };
+    StudentInfo Bob;
+    Bob.id = 1;
+    Bob.age = 18;
+    Bob.gender = "male";
+    Bob.cga = 3.2;
+    cout << Bob.id << " " << Bob.age << " " << Bob.gender << " " << Bob.cga; */
+    struct StudentGrade {
+        int lab[5] = {1, 2, 3, 4, 5};
+        int homework[3] = {5, 5, 5};
+        int exam[2] = {8, 7};
+    };
+    StudentGrade mike;
+    int *labptr = mike.lab;
+    int *homeworkptr = mike.homework;
+    int *examptr = mike.exam;
+    int sum = 0, ctr = 0;
+    float average = 0;
+
     return 0;
 }
